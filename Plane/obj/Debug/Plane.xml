@@ -22,7 +22,7 @@ Plane
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Plane.My.Resources.Resources.Global5000_specs_cad_top">
+<member name="P:Plane.My.Resources.Resources.Plane">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

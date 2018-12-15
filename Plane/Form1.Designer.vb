@@ -115,7 +115,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Plane.My.Resources.Resources.Global5000_specs_cad_top
+        Me.PictureBox1.Image = Global.Plane.My.Resources.Resources.Plane
         Me.PictureBox1.Location = New System.Drawing.Point(95, 275)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(942, 341)

@@ -63,9 +63,9 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property Global5000_specs_cad_top() As System.Drawing.Bitmap
+        Friend ReadOnly Property Plane() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Global5000_specs-cad-top", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Plane", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
