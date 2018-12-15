@@ -104,6 +104,25 @@ Public Class Form1
     ' Delete a booking
     Private Sub Button60_Click(sender As Object, e As EventArgs) Handles Button60.Click
         view()
+        If z = 1 Then
+            x = MsgBox("هل تريد إلغاء حجز هذا الكرسي؟", MsgBoxStyle.OkCancel)
+            If x = 1 Then
+                buttons(j).BackColor = Color.Lime
+                z = 0
+                prec.korsi(j) = 0
+                prec.passenger(j) = "0"
+                prec.phone(j) = "0"
+                prec.address(j) = "0"
+
+            ElseIf x = 2 Then
+                buttons(j).BackColor = Color.Orange
+                Exit Sub
+            End If
+        ElseIf z = 2 Then
+            MsgBox("لا يمكن إلغاء حجز هذا الكرسي")
+
+        End If
+        clear2()
 
     End Sub
 
@@ -197,5 +216,13 @@ Public Class Form1
         TextBox7.Clear()
         TextBox8.Clear()
         TextBox9.Clear()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Try
+            view()
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
