@@ -78,6 +78,7 @@ Public Class Form1
         clear()
     End Sub
 
+    ' Book a chair
     Private Sub Button58_Click(sender As Object, e As EventArgs) Handles Button58.Click
         view()
         x = MsgBox("هل تريد حجز هذا الكرسي؟", MsgBoxStyle.OkCancel)
@@ -98,6 +99,12 @@ Public Class Form1
 
         End If
         clear2()
+    End Sub
+
+    ' Delete a booking
+    Private Sub Button60_Click(sender As Object, e As EventArgs) Handles Button60.Click
+        view()
+
     End Sub
 
     Sub view()
@@ -124,6 +131,32 @@ Public Class Form1
                 buttons(i).BackColor = Color.Lime
             End If
         Next
+    End Sub
+
+    ' Confirm Booking
+    Private Sub Button59_Click(sender As Object, e As EventArgs) Handles Button59.Click
+        view()
+        If z = 0 Then
+            MsgBox("لم يسبق الحجز")
+        ElseIf z = 1 Then
+            x = MsgBox("هل تريد تأكيد حجز هذا الكرسي؟", MsgBoxStyle.OkCancel)
+            If x = 1 Then
+                buttons(j).BackColor = Color.Red
+                z = 2
+                FileGet(1, prec, Val(TextBox1.Text))
+
+                prec.korsi(j) = z
+                s = Val(TextBox1.Text)
+                FilePut(1, prec, s)
+
+            ElseIf x = 2 Then
+                buttons(j).BackColor = Color.Orange
+                Exit Sub
+
+            End If
+        End If
+        clear2()
+
     End Sub
 
     Public Sub korsyy_no(ByVal sender As System.Object, ByVal e As System.EventArgs)
