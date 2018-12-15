@@ -1,1 +1,11 @@
 C:\Users\ahmed\Desktop\Plane\Plane\bin\Debug\Plane.exe.config
+C:\Users\ahmed\Desktop\Plane\Plane\bin\Debug\Plane.exe
+C:\Users\ahmed\Desktop\Plane\Plane\bin\Debug\Plane.pdb
+C:\Users\ahmed\Desktop\Plane\Plane\bin\Debug\Plane.xml
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.vbprojResolveAssemblyReference.cache
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.Form1.resources
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.Resources.resources
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.vbproj.GenerateResource.Cache
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.exe
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.xml
+C:\Users\ahmed\Desktop\Plane\Plane\obj\Debug\Plane.pdb

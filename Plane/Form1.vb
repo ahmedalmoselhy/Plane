@@ -33,5 +33,6 @@ Public Class Form1
         prec.phone = New String(55) {}
         prec.address = New String(55) {}
 
+        Label1.Text = Now()
     End Sub
 End Class
