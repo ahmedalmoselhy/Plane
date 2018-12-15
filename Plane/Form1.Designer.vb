@@ -107,7 +107,7 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -721,7 +721,7 @@ Partial Class Form1
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
+        Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.TextBox9)
         Me.GroupBox2.Controls.Add(Me.TextBox8)
         Me.GroupBox2.Controls.Add(Me.TextBox7)
@@ -890,12 +890,14 @@ Partial Class Form1
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Class"
         '
-        'TextBox10
+        'Label13
         '
-        Me.TextBox10.Location = New System.Drawing.Point(168, 136)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(220, 22)
-        Me.TextBox10.TabIndex = 1
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.SystemColors.Window
+        Me.Label13.Location = New System.Drawing.Point(168, 139)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(0, 16)
+        Me.Label13.TabIndex = 2
         '
         'Form1
         '
@@ -1058,7 +1060,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox10 As TextBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents TextBox7 As TextBox
@@ -1066,4 +1067,5 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents Label13 As Label
 End Class
