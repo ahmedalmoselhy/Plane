@@ -20,6 +20,15 @@ Public Class Form1
 
     Dim buttons(55) As Button
     Dim z, i, s, x, j As Integer
+
+    Private Sub Button61_Click(sender As Object, e As EventArgs) Handles Button61.Click
+        ' Close The File
+        FileClose(1)
+
+        ' Exit Program
+        End
+    End Sub
+
     Dim position As Integer
 
     Public prec As hagz
@@ -34,5 +43,12 @@ Public Class Form1
         prec.address = New String(55) {}
 
         Label1.Text = Now()
+
+        For i = 1 To 56
+            buttons(i - 1) = Me.Controls("button" & i)
+            AddHandler buttons(i - 1).Click, AddressOf korsyy_no
+        Next
     End Sub
+
+
 End Class
